@@ -1,2 +1,2 @@
 # primitiveFPSWithUnity
-First demo game using Unity 3D
+First game demo using Unity 3D
