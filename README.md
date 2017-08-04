@@ -11,7 +11,7 @@ This a basic Shooter using Unity 3D
 
 **The bullets are not created with raycast they are objets and that will make the game slow after few min because are creating and destroyed when the player fire**, the reason why all the bullets are objets is because was a my first shooter game and for the moment when i created i didn't know how to use the raycast.
 
-##Things that will be implemented in the future:
+## Things that will be implemented in the future:
 
 1. Fire with Raycast.
 2. Change the Stage 1 for other more easy to play with easy mechanics.
