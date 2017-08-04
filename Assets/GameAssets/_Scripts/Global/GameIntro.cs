@@ -30,6 +30,12 @@ public class GameIntro : MonoBehaviour
 
     private void Update()
     {
+        if (Input.GetButtonDown("Cancel"))
+        {
+            StopAllCoroutines();
+            SceneManager.LoadScene("GamePlay");
+        }
+
         if (_messageTextLenght <= 0)
         {
             _audioSource.Stop();

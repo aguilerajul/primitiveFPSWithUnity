@@ -1,7 +1,15 @@
-﻿using UnityEngine;
+﻿using UnityEditor;
+using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class UIMenuActions : MonoBehaviour {
+public class UIMenuActions : MonoBehaviour
+{
+    [SerializeField] private Texture2D _mouseTexture;
+
+    void Start()
+    {
+        Cursor.SetCursor(_mouseTexture, Vector2.zero, CursorMode.Auto);
+    }
 
     public void PlayGame(string sceneName)
     {
