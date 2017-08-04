@@ -13,7 +13,7 @@ public class PlayerLifeBarUI : MonoBehaviour {
     void Start () {
         _playerLifeController = GetComponentInParent<PlayerLifeController>();
         _playerLifeBarImage = GetComponentInChildren<Image>();
-        _playerLifeBarText = GameObject.Find("/Player/PlayerCanvas/PlayerLifeText").GetComponent<Text>();
+        _playerLifeBarText = GameObject.Find("/Player/PlayerCanvas/TopPanel/PlayerLifeText").GetComponent<Text>();
     }
 	
 	// Update is called once per frame
