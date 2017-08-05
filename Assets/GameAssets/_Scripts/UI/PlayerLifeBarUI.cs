@@ -12,7 +12,7 @@ public class PlayerLifeBarUI : MonoBehaviour {
     // Use this for initialization
     void Start () {
         _playerLifeController = GetComponentInParent<PlayerLifeController>();
-        _playerLifeBarImage = GetComponentInChildren<Image>();
+        _playerLifeBarImage = GameObject.Find("/Player/PlayerCanvas/TopPanel/PlayerLifeBar").GetComponent<Image>();
         _playerLifeBarText = GameObject.Find("/Player/PlayerCanvas/TopPanel/PlayerLifeText").GetComponent<Text>();
     }
 	

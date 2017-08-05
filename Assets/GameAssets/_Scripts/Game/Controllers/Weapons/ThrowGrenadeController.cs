@@ -23,8 +23,8 @@ public class ThrowGrenadeController : MonoBehaviour
     private void Awake()
     {
         currentGrenades = grenadeLimits;
-        _grenadeText = GameObject.Find("/Player/PlayerCanvas/GrenadeText").GetComponent<Text>();        
-        _grenadeImages = GameObject.Find("Player").GetComponentsInChildren<Image>().Where(x => x.name.ToLower().Contains("grenade")).ToArray();
+        _grenadeText = GameObject.Find("/Player/PlayerCanvas/GrenadePanel/GrenadeText").GetComponent<Text>();        
+        _grenadeImages = GameObject.Find("/Player/PlayerCanvas/GrenadePanel").GetComponentsInChildren<Image>().Where(x => x.name.ToLower().Contains("grenadebomb")).ToArray();
         //_grenadeText = _playerCanvas.GetComponentInChildren<Text>();
     }
 
