@@ -23,9 +23,9 @@ public class PlayerCanvasController : MonoBehaviour
     // Use this for initialization
     void Awake()
     {
-        _activatedPortalsCountText = GameObject.Find("/Player/PlayerCanvas/ActivedPortalsCount").GetComponent<Text>();
-        _enemiesScoreCountText = GameObject.Find("/Player/PlayerCanvas/EnemiesScoreCount").GetComponent<Text>();
-        _stoneCollectedCountText = GameObject.Find("/Player/PlayerCanvas/StoneCollectCount").GetComponent<Text>();
+        _activatedPortalsCountText = GameObject.Find("/Player/PlayerCanvas/IndicatorPanel/ActivedPortalsCount").GetComponent<Text>();
+        _enemiesScoreCountText = GameObject.Find("/Player/PlayerCanvas/IndicatorPanel/EnemiesScoreCount").GetComponent<Text>();
+        _stoneCollectedCountText = GameObject.Find("/Player/PlayerCanvas/IndicatorPanel/StoneCollectCount").GetComponent<Text>();
         _gameInstructionsPanel = GameObject.Find("/Player/PlayerCanvas/GameInstructionsPanel");
         _gameInstructionsText = GameObject.Find("/Player/PlayerCanvas/GameInstructionsPanel/GameInstructionsText").GetComponent<Text>();
         _portal = FindObjectOfType<PortalsController>();
