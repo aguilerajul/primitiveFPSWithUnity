@@ -7,10 +7,11 @@ public class FarEnemyController : MonoBehaviour
     public float shootForce = 50f;
     public float timeToShot = 10f;
     public float radioToShoot = 40f;
-    
+
     private Animator _animator;
     private GameObject _player;
 
+    #region UnityFunctions
     void Awake()
     {
         _animator = GetComponentInParent<Animator>();
@@ -23,6 +24,9 @@ public class FarEnemyController : MonoBehaviour
     {
         SetRotation();
     }
+    #endregion
+
+    #region CustomFunctions
 
     void EnemyShoot()
     {
@@ -37,7 +41,7 @@ public class FarEnemyController : MonoBehaviour
 
             Vector3 currentPosition = this.transform.forward;
             currentPosition.y -= 0.02f;
-            enemyBullet.GetComponent<Rigidbody>().AddForce(currentPosition * this.shootForce, ForceMode.Impulse);            
+            enemyBullet.GetComponent<Rigidbody>().AddForce(currentPosition * this.shootForce, ForceMode.Impulse);
             AudioSource.PlayClipAtPoint(shootClip, this.transform.position);
         }
     }
@@ -48,4 +52,6 @@ public class FarEnemyController : MonoBehaviour
         Vector3 finalDirection = Vector3.RotateTowards(this.transform.root.forward, direction, 10f, 0);
         transform.root.rotation = Quaternion.LookRotation(finalDirection);
     }
+
+    #endregion
 }
