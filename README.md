@@ -18,3 +18,7 @@ This a basic Shooter using Unity 3D
 3. Changes in the UI (Objects position)
 4. Animations.
 5. Hands for the weapons.
+
+## Playable Game:
+
+[Download Here](https://www.dropbox.com/s/1mw9jfzjryyssdq/primitiveFPSWithUnity.rar?dl=0)
