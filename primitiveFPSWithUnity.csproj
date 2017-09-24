@@ -95,6 +95,7 @@
     <Compile Include="Assets\GameAssets\_Scripts\Game\Controllers\Attacks\GolemAttackController.cs" />
     <Compile Include="Assets\GameAssets\_Scripts\Game\Controllers\EnemyGenerator\EnemyGenaratorController.cs" />
     <Compile Include="Assets\GameAssets\_Scripts\Game\Controllers\Evironment\PoolDamageController.cs" />
+    <Compile Include="Assets\GameAssets\_Scripts\Game\Controllers\Evironment\SpritesTilingMovement.cs" />
     <Compile Include="Assets\GameAssets\_Scripts\Game\Controllers\Evironment\StairsController.cs" />
     <Compile Include="Assets\GameAssets\_Scripts\Game\Controllers\Life\EnemyLifeController.cs" />
     <Compile Include="Assets\GameAssets\_Scripts\Game\Controllers\Life\LifeController.cs" />
