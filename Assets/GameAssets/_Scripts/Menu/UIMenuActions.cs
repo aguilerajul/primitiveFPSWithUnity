@@ -36,7 +36,6 @@ public class UIMenuActions : MonoBehaviour
     public void RestartLevel(string sceneName)
     {
         SceneManager.LoadScene(sceneName);
-        Time.timeScale = 1.0F;
     }
 
     public void ExitGame()
